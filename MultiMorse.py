@@ -13,7 +13,7 @@ class MultiMorse(Calculator):
         self.combo = combo
         self.cutoff = cutoff
 
-    def initialize(self, image):
+    def get_params(self, image):
         params_dict = self.params
         chemical_symbols = np.array(image.get_chemical_symbols())
         params = []
